@@ -87,27 +87,6 @@ public class IntLinkedList {
         }
     }
 
-    public void removeAtIndex(int index) {
-        Node currentNode = head;
-        if (index == 0) {
-            head = head.getNext();
-            size--;
-        } else if (index == (size - 1)) {
-            removeTail();
-        } else {
-            index = index - 1;
-            for (int i = 0; i < size - 1; i++) {
-                if (index == i) {
-                    Node nextNode = currentNode.getNext();
-                    currentNode.setNext(nextNode.getNext());
-                    size--;
-                    break;
-                }
-                currentNode = currentNode.getNext();
-            }
-        }
-    }
-
     public void display() {
         Node currentNode = head;
         while (currentNode != null) {

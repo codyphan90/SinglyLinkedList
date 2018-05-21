@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         IntLinkedList intLinkedList = new IntLinkedList();
         intLinkedList.appendAtTail(10);
-        intLinkedList.appendAtTail(10);
+        intLinkedList.appendAtTail(9);
         intLinkedList.appendAtTail(22);
         intLinkedList.appendAtTail(3);
         intLinkedList.appendAtTail(34);
@@ -12,8 +12,6 @@ public class Main {
         intLinkedList.appendAtTail(2);
         intLinkedList.appendAtTail(11);
 //        intLinkedList.removeTail();
-//        intLinkedList.removeAtIndex(5);
-//        intLinkedList.moveToTailNode(4);
         intLinkedList.removeNodeGreatThan(10);
         intLinkedList.display();
 
