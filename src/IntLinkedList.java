@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class IntLinkedList {
     private Node head;
     private Node tail;
